@@ -1,0 +1,131 @@
+/* index */
+.post-index-container {
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.post-index-container .post-header {
+    font-size: 14px;
+    display: flex;  
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+
+}
+
+.post-index-container .post-header .post-user-name {
+    padding-right: 15px ;
+    font-weight: 600;
+    color: #090808;
+}
+.post-index-container .post-header .post-date {
+    font-weight: 600;
+    color: #5c5757;
+}
+
+.post-index-container .post-body {
+    padding: 20px;
+}
+.post-index-container .post-body .post-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #161515;
+    margin-bottom: 10px;
+}
+.post-index-container .post-body .post-content {
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+.post-index-container .post-body .post-content p {
+    margin: 0;
+    padding: 10px;
+}
+.post-index-container .post-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+
+}
+.post-index-container .post-footer .post-like {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    color: #10028b;
+}
+.post-index-container .post-footer .post-dislike {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    color:  #b00808;
+}
+
+
+
+
+/* create */
+.post-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.post-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.post-container form {
+    margin-top: 20px;
+}
+
+.post-container input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.post-container input:focus {
+    outline: 2px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.post-container textarea:focus {
+    outline: 2px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.post-container input:hover,
+.post-container textarea:hover {
+    background-color: #fafafa;
+}
+
+.post-container textarea {
+    width: 100%;
+    border: none  ;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}   
+

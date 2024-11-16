@@ -1,0 +1,29 @@
+create table users(
+    id int primary key auto_increment,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255)
+    created_at timestamp default current_timestamp,
+)
+
+create table posts(
+    id int primary key auto_increment,
+    title varchar(255),
+    user_id int,
+    body TEXT,
+    created_at timestamp default current_timestamp,
+    foreign key(user_id) references users(id) on delete cascade
+);
+
+create view v_posts as
+SELECT 
+    posts.id as post__id,
+    users.id as user_id,
+    users.name as user_name,
+    posts.title as post_title,
+    posts.body as post_body,
+    posts.created_at as post_created_at,
+    users.created_at as user_created_at
+    FROM posts INNER JOIN users 
+    ON posts.user_id = users.id;
+    ORDER BY posts.created_at DESC;
